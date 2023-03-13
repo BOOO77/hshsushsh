@@ -1,0 +1,917 @@
+local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+
+local window = kavoUi.CreateLib("IAT GUI By STGM721#6761","Synapse")
+
+---Tabs
+
+local Tab1 = window:NewTab("Utilities")
+
+local Tab1Section = Tab1:NewSection("InfEffect")
+
+local Tab2 = window:NewTab("Grabtools")
+
+local Tab2Section = Tab2:NewSection("Item")
+
+local Tab3 = window:NewTab("NPC")
+
+local Tab3Section = Tab3:NewSection("NPC")
+
+local Tab4 = window:NewTab("Stand Storage")
+
+local Tab4Section = Tab4:NewSection("Stand Storage")
+
+local Tab5 = window:NewTab("Mode")
+
+local Tab5Section = Tab5:NewSection("Mode")
+
+local Tab6 = window:NewTab("other")
+
+local Tab6Section = Tab6:NewSection("other utilities")
+
+local Tab7 = window:NewTab("Credit")
+
+local Tab7Section = Tab7:NewSection("Made By STGM721#6761")
+
+local Tab7Section = Tab7:NewSection("DO NOT COPY MY SCRIPT")
+
+local Tab7Section = Tab7:NewSection("this script Will have update")
+
+---Buttons
+
+Tab1Section:NewToggle("AutoBlock", "Protection", function(state)
+
+    if state then
+
+        _G.loop = true 
+
+        
+
+        while _G.loop == true do 
+
+        local args = {
+
+    [1] = true
+
+}
+
+game:GetService("ReplicatedStorage").Basic.Block:FireServer(unpack(args)) 
+
+wait()
+
+end
+
+    else
+
+        _G.loop = false 
+
+        
+
+        while _G.loop == true do 
+
+        local args = {
+
+    [1] = true
+
+}
+
+game:GetService("ReplicatedStorage").Basic.Block:FireServer(unpack(args)) 
+
+wait()
+
+end
+
+    end
+
+end)
+
+Tab1Section:NewButton("CopyStand","Copy ur stand",function()
+
+local stand = 0
+
+while true do 
+
+    if stand >= 70 then 
+
+       break 
+
+    end 
+
+    stand = stand + 1 
+
+    wait()
+
+    game:GetService("ReplicatedStorage"):WaitForChild("GiveStand"):FireServer()
+
+end 
+
+end)
+
+local Tab1Section = Tab1:NewSection("Hamon Effect")
+
+Tab1Section:NewToggle("InfSendo", "Use Hamon", function(state)
+
+    if state then
+
+        _G.loop = true 
+
+        
+
+        while _G.loop == true do 
+
+        local args = {
+
+    [1] = "SendoRipple"
+
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Hamon.HamonLocalisedRemote:FireServer(unpack(args)) 
+
+wait()
+
+end
+
+    else
+
+        _G.loop = false 
+
+        
+
+        while _G.loop == true do 
+
+        local args = {
+
+    [1] = "SendoRipple"
+
+}
+
+game:GetService("Players").LocalPlayer.Backpack.Hamon.HamonLocalisedRemote:FireServer(unpack(args)) 
+
+wait()
+
+end
+
+    end
+
+end)
+
+local Tab1Section = Tab1:NewSection("Vamp/Vtw effect")
+
+Tab1Section:NewToggle("InfVampHeal", "Use Vtw/vamp", function(state)
+
+    if state then
+
+        _G.loop = true 
+
+        
+
+        while _G.loop == true do 
+
+        local Event = game:GetService("ReplicatedStorage").SpecialMoves.VampireHeal
+
+Event:FireServer() 
+
+wait()
+
+end
+
+    else
+
+        _G.loop = false 
+
+        
+
+        while _G.loop == true do 
+
+        local Event = game:GetService("ReplicatedStorage").SpecialMoves.VampireHeal
+
+Event:FireServer() 
+
+wait()
+
+end
+
+    end
+
+end)
+
+Tab1Section:NewToggle("LAZERS EYE", "use vamp/vtw", function(state)
+
+    if state then
+
+        _G.loop = true 
+
+        
+
+        while _G.loop == true do 
+
+        local Event = game:GetService("ReplicatedStorage").Attacks.SpaceRipper
+
+Event:FireServer()
+
+wait()
+
+end
+
+    else
+
+        _G.loop = false 
+
+        
+
+        while _G.loop == true do 
+
+        local Event = game:GetService("ReplicatedStorage").Attacks.SpaceRipper
+
+Event:FireServer()
+
+wait()
+
+end
+
+    end
+
+end)
+
+local Tab1Section = Tab1:NewSection("Kars effect")
+
+Tab1Section:NewButton("KarsShine","use kars for this",function()
+
+local event = 0 
+
+while event <100 do
+
+game:GetService("ReplicatedStorage").SpecialMoves.KarsShineMode:FireServer()
+
+wait(20)
+
+end
+
+end)
+
+Tab1Section:NewButton("InfKarsHeal","use kars for this",function()
+
+local event = 0
+
+while event < 100 do
+
+game:GetService("ReplicatedStorage").SpecialMoves.KarsHeal:FireServer()
+
+wait(0)
+
+end
+
+end)
+
+local Tab1Section = Tab1:NewSection("The hand Effect")
+
+Tab1Section:NewToggle("The hand inf Pull", "PULL EVERYONE HAHAHAHA", function(state)
+
+    if state then
+
+        _G.loop = true 
+
+        
+
+        while _G.loop == true do 
+
+        local args = {
+
+    [1] = "Pull",
+
+    [2] = 50
+
+}
+
+game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("The Hand").THLocalisedRemote:FireServer(unpack(args)) 
+
+wait()
+
+end
+
+    else
+
+        _G.loop = false 
+
+        
+
+        while _G.loop == true do 
+
+        local args = {
+
+    [1] = "Pull",
+
+    [2] = 50
+
+}
+
+game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("The Hand").THLocalisedRemote:FireServer(unpack(args)) 
+
+wait()
+
+end
+
+    end
+
+end)
+
+local Tab1Section = Tab1:NewSection("Ger/Ge effect")
+
+Tab1Section:NewToggle("InfGeHeal", "Be Immortal with ge", function(state)
+
+    if state then
+
+        _G.loop = true 
+
+        
+
+        while _G.loop == true do 
+
+        local args = {
+
+    [1] = true,
+
+    [2] = game:GetService("Players").LocalPlayer.Character.Humanoid,
+
+    [3] = math.huge,
+
+    [4] = CFrame.new(Vector3.new(0, 0, 0), Vector3.new(0, 0, 0)),
+
+    [7] = 1,
+
+    [8] = "rbxassetid://4567255304",
+
+    [9] = 2.5
+
+}
+
+game:GetService("ReplicatedStorage").Attacks.Heal.GEHeal:FireServer(unpack(args)) 
+
+wait()
+
+end
+
+    else
+
+        _G.loop = false 
+
+        
+
+        while _G.loop == true do 
+
+        local args = {
+
+    [1] = true,
+
+    [2] = game:GetService("Players").LocalPlayer.Character.Humanoid,
+
+    [3] = math.huge,
+
+    [4] = CFrame.new(Vector3.new(0, 0, 0), Vector3.new(0, 0, 0)),
+
+    [7] = 1,
+
+    [8] = "rbxassetid://4567255304",
+
+    [9] = 2.5
+
+}
+
+game:GetService("ReplicatedStorage").Attacks.Heal.GEHeal:FireServer(unpack(args)) 
+
+wait()
+
+end
+
+    end
+
+end)
+
+local Tab1Section = Tab1:NewSection("Twoh effect")
+
+Tab1Section:NewToggle("Inf heal twoh", "INF HEAL TWOH", function(state)
+
+    if state then
+
+        _G.loop = true 
+
+while _G.loop == true do
+
+local args = {
+
+    [1] = true,
+
+    [2] = game:GetService("Players").LocalPlayer.Character.Humanoid,
+
+    [3] = math.huge,
+
+    [4] = CFrame.new(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+
+    [7] = 1,
+
+    [8] = "rbxassetid://1202656211",
+
+    [9] = 2.25
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Attacks"):WaitForChild("Heal"):WaitForChild("OverHeavenHeal"):FireServer(unpack(args))
+
+wait()
+
+end
+
+    else
+
+        _G.loop = false 
+
+while _G.loop == true do
+
+local args = {
+
+    [1] = true,
+
+    [2] = game:GetService("Players").LocalPlayer.Character.Humanoid,
+
+    [3] = math.huge,
+
+    [4] = CFrame.new(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+
+    [7] = 1,
+
+    [8] = "rbxassetid://1202656211",
+
+    [9] = 2.25
+
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Attacks"):WaitForChild("Heal"):WaitForChild("OverHeavenHeal"):FireServer(unpack(args))
+
+wait()
+
+end
+
+    end
+
+end)
+
+Tab2Section:NewButton("GetArrow","get Arrow",function()
+
+game:GetService("ReplicatedStorage").ItemGiver.GiveArrow:FireServer()
+
+end)
+
+Tab2Section:NewButton("GetClock","Hold a Stand Arrow and use this to get useless clock",function()
+
+game:GetService("ReplicatedStorage").ItemGiver.GiveClock:FireServer()
+
+end)
+
+local Tab2Section = Tab2:NewSection("u need 500$ money to get Arrow")
+
+local Tab2Section = Tab2:NewSection("u need Arrow to get clock, its useless btw")
+
+Tab3Section:NewButton("GetHamon","use this to get hamon when The NPC spawn",function()
+
+game:GetService("ReplicatedStorage").AbilityGiver.GetHamon:FireServer()
+
+end)
+
+Tab4Section:NewButton("Storage1","StandStorage1",function()
+
+local args = {
+
+    [1] = 1
+
+}
+
+game:GetService("ReplicatedStorage").Essentals.StandStorage:FireServer(unpack(args))
+
+end)
+
+Tab4Section:NewButton("storage 2","StandStorage2",function()
+
+local args = {
+
+    [1] = 2
+
+}
+
+game:GetService("ReplicatedStorage").Essentals.StandStorage:FireServer(unpack(args))
+
+end)
+
+Tab4Section:NewButton("Storage3","StandStorage3",function()
+
+local args = {
+
+    [1] = 3
+
+}
+
+game:GetService("ReplicatedStorage").Essentals.StandStorage:FireServer(unpack(args))
+
+end)
+
+local Tab5Section = Tab5:NewSection("All Stand Mode")
+
+Tab5Section:NewButton("lazers shot mode","press T to use",function()
+
+getgenv().Toggled =false
+
+getgenv().KeyBind ="T"
+
+getgenv().Delay = 0
+
+local UIS=game:GetService'UserInputService'
+
+local function Source()
+
+local LP = game.Players.LocalPlayer
+
+local success, err = pcall(function()
+
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+
+if v ~= game.Players.LocalPlayer then
+
+local args = {
+
+    [1] = CFrame.new(Vector3.new(-644.7510986328125, -4.085488796234131, 1669.3634033203125), Vector3.new(0.8611931204795837, 1.0763967495108773e-08, -0.5082778334617615))
+
+}
+
+game:GetService("ReplicatedStorage").Attacks.DioKnifeThrow:FireServer(unpack(args))
+
+game:GetService("ReplicatedStorage").Attacks.SpaceRipper:FireServer()
+
+game:GetService("ReplicatedStorage").Effects.PreTimestop:FireServer()
+
+game:GetService("ReplicatedStorage").SpecialMoves.VampireHeal:FireServer()
+
+end
+
+end
+
+end)
+
+if err then
+
+warn(err)
+
+end
+
+end
+
+UIS.InputBegan:Connect(function(Key)
+
+    if Key.KeyCode==Enum.KeyCode[getgenv().KeyBind:upper()] and not UIS:GetFocusedTextBox() then
+
+        if getgenv().Toggled then
+
+            getgenv().Toggled=false
+
+        elseif not getgenv().Toggled then
+
+            getgenv().Toggled=true
+
+            while getgenv().Toggled do
+
+                Source()
+
+                wait(getgenv().Delay)
+
+            end
+
+        end
+
+    end
+
+end)
+
+end)
+
+Tab5Section:NewButton("Kill Aura Mode","Press E To use",function()
+
+getgenv().Toggled =false
+
+getgenv().KeyBind ="E"
+
+getgenv().Delay = 0
+
+local UIS=game:GetService'UserInputService'
+
+local function Source()
+
+local LP = game.Players.LocalPlayer
+
+local success, err = pcall(function()
+
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+
+if v ~= game.Players.LocalPlayer then
+
+local args = {
+
+    [1] = v.Character.Humanoid,
+
+    [2] = 100,
+
+    [3] = v.Character.HumanoidRootPart.Position,
+
+    [4] = v.Character.HumanoidRootPart.Position,
+
+    [5] = 0.1,
+
+    [6] = 1,
+
+    [7] = "rbxassetid://260430079",
+
+    [8] = 0.6
+
+}
+
+game:GetService("ReplicatedStorage").Attacks.DamageBlunt:FireServer(unpack(args))
+
+local args = {
+
+    [1] = v.Character
+
+}
+
+game:GetService("ReplicatedStorage").SpecialMoves.BlockBreak:FireServer(unpack(args))
+
+end
+
+end
+
+end)
+
+if err then
+
+warn(err)
+
+end
+
+end
+
+UIS.InputBegan:Connect(function(Key)
+
+    if Key.KeyCode==Enum.KeyCode[getgenv().KeyBind:upper()] and not UIS:GetFocusedTextBox() then
+
+        if getgenv().Toggled then
+
+            getgenv().Toggled=false
+
+        elseif not getgenv().Toggled then
+
+            getgenv().Toggled=true
+
+            while getgenv().Toggled do
+
+                Source()
+
+                wait(getgenv().Delay)
+
+            end
+
+        end
+
+    end
+
+end)
+
+end)
+
+Tab5Section:NewButton("DamageDioMode","Press E to use",function()
+
+getgenv().Toggled =false
+
+getgenv().KeyBind ="E"
+
+getgenv().Delay = 0
+
+local UIS=game:GetService'UserInputService'
+
+local function Source()
+
+local LP = game.Players.LocalPlayer
+
+local success, err = pcall(function()
+
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+
+if v ~= game.Players.LocalPlayer then
+
+local args = {
+
+    [1] = workspace.DioOverHeaven.Humanoid,
+
+    [2] = 100,
+
+    [3] = CFrame.new(Vector3.new(0, 0, 0), Vector3.new(0, 0, 0)),
+
+    [4] = Vector3.new(0, 0, 0),
+
+    [5] = 0.1,
+
+    [6] = 0.6,
+
+    [7] = "rbxassetid://260430079",
+
+    [8] = 1
+
+}
+
+game:GetService("ReplicatedStorage").Attacks.DamageBlunt:FireServer(unpack(args))
+
+end
+
+end
+
+end)
+
+if err then
+
+warn(err)
+
+end
+
+end
+
+UIS.InputBegan:Connect(function(Key)
+
+    if Key.KeyCode==Enum.KeyCode[getgenv().KeyBind:upper()] and not UIS:GetFocusedTextBox() then
+
+        if getgenv().Toggled then
+
+            getgenv().Toggled=false
+
+        elseif not getgenv().Toggled then
+
+            getgenv().Toggled=true
+
+            while getgenv().Toggled do
+
+                Source()
+
+                wait(getgenv().Delay)
+
+            end
+
+        end
+
+    end
+
+end)
+
+end)
+
+local Tab5Section = Tab5:NewSection("Kc stand Mode")
+
+Tab5Section:NewButton("kc epitaph","use this to get inf epitaph",function()
+
+local args = {
+
+    [1] = "Epitaph"
+
+}
+
+game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("King Crimson").KCLocalisedRemote:FireServer(unpack(args))
+
+end)
+
+Tab5Section:NewButton("KC invisible","use kc for this to work",function()
+
+local args = {
+
+    [1] = "TimeErase"
+
+}
+
+game:GetService("Players").LocalPlayer.Backpack:FindFirstChild("King Crimson").KCLocalisedRemote:FireServer(unpack(args))
+
+end)
+
+local Tab5Section = Tab5:NewSection("after u use one mode u cant use another mode")
+
+local Tab5Section = Tab5:NewSection("u also need keyboard/keyboard script for it to work on mobile")
+
+Tab6Section:NewButton("RTX","Make ur game look good",function()
+
+local a = game.Lighting
+
+a.Ambient = Color3.fromRGB(19, 19, 33)
+
+a.Brightness = 1.9
+
+a.ColorShift_Bottom = Color3.fromRGB(0, 0, 0)
+
+a.ColorShift_Top = Color3.fromRGB(255, 247, 300)
+
+a.EnvironmentDiffuseScale = 0.105
+
+a.EnvironmentSpecularScale = 0.522
+
+a.GlobalShadows = true
+
+a.OutdoorAmbient = Color3.fromRGB(51, 54, 67)
+
+a.ShadowSoftness = 0.18
+
+a.GeographicLatitude = -15.525
+
+a.ExposureCompensation = 0.75
+
+b.Enabled = true
+
+b.Intensity = 0.99
+
+b.Size = 9999 
+
+b.Threshold = 0
+
+local c = Instance.new("ColorCorrectionEffect", a)
+
+c.Brightness = 0.015
+
+c.Contrast = 0.25
+
+c.Enabled = true
+
+c.Saturation = 0.2
+
+c.TintColor = Color3.fromRGB(217, 145, 57)
+
+if getgenv().mode == "Summer" then
+
+   c.TintColor = Color3.fromRGB(255, 220, 148)
+
+elseif getgenv().mode == "Autumn" then
+
+   c.TintColor = Color3.fromRGB(217, 145, 57)
+
+else
+
+   warn("No mode selected!")
+
+   print("Please select a mode")
+
+   b:Destroy()
+
+   c:Destroy()
+
+end
+
+local d = Instance.new("DepthOfFieldEffect", a)
+
+d.Enabled = true
+
+d.FarIntensity = 0.077
+
+d.FocusDistance = 21.54
+
+d.InFocusRadius = 20.77
+
+d.NearIntensity = 0.277
+
+local e = Instance.new("ColorCorrectionEffect", a)
+
+e.Brightness = 0
+
+e.Contrast = -0.07
+
+e.Saturation = 0
+
+e.Enabled = true
+
+e.TintColor = Color3.fromRGB(255, 247, 239)
+
+local e2 = Instance.new("ColorCorrectionEffect", a)
+
+e2.Brightness = 0.2
+
+e2.Contrast = 0.45
+
+e2.Saturation = -0.1
+
+e2.Enabled = true
+
+e2.TintColor = Color3.fromRGB(255, 255, 255)
+
+local s = Instance.new("SunRaysEffect", a)
+
+s.Enabled = true
+
+s.Intensity = 0.01
+
+s.Spread = 0.146
+
+print("RTX Graphics loaded! Created by STGM721")
+
+end)
+
+Tab6Section:NewButton("RTX GUI v3","make the game look good",function()
+
+loadstring(game:HttpGet(('https://pastefy.ga/xXkUxA0P/raw'),true))()
+
+end)
