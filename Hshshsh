@@ -1,6 +1,6 @@
 local kavoUi = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
 
-local window = kavoUi.CreateLib("IAT GUI By STGM721#6761","Synapse")
+local window = kavoUi.CreateLib("LIORIN HUB","Synapse")
 
 ---Tabs
 
